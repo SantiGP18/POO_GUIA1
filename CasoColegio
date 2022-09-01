@@ -1,0 +1,48 @@
+package CasoColegio;
+
+public class Administrativos {
+    //Atributos
+    int ID;
+    int edad;
+    int telefono;
+    String nombre;
+    String direccion;
+    String area_trabajo;
+    String tipo_contrato;
+    
+    //Método contructor
+    public Administrativos(int ID, int edad, int telefono, String nombre, String direccion, String area_trabajo, String tipo_contrato) {
+        this.ID = ID;
+        this.edad = edad;
+        this.telefono = telefono;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.area_trabajo = area_trabajo;
+        this.tipo_contrato = tipo_contrato;
+    }
+    
+    public void imprimir(){
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Numero de ID: "+ID);
+        System.out.println("Edad: "+edad);
+        System.out.println("Area de trabajo: "+area_trabajo);
+        System.out.println("Tipo de contrato: "+tipo_contrato);
+        System.out.println("Telefono: "+telefono);
+        System.out.println("Direccion: "+direccion);
+    }
+    
+    public void horario(int numero){
+        if(numero ==2){
+           System.out.println("Tipo de usuario: Administrativo");
+           System.out.println("Horario: Tiempo completo");
+        }
+    }
+    
+    public void transporte(int numero){
+        if(numero==2){
+            System.out.println("Tipo de usuario: Administrativo");
+            System.out.println("Medios de transporte: Transporte publico");
+            System.out.println();
+        }       
+    }
+}
